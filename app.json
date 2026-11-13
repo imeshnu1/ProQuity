@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "Proquity",
+    "slug": "proquity",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "io.proquity.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#04172f",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "io.proquity.app"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "output": "single",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      "expo-image",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Proquity needs access to your photos so you can add a profile image and company logo."
+        }
+      ],
+      "expo-document-picker"
+    ],
+    "scheme": "proquity",
+    "backgroundColor": "#f5f5f5",
+    "experiments": {
+      "typedRoutes": false
+    }
+  }
+}
